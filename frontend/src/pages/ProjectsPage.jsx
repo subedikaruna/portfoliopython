@@ -6,7 +6,7 @@ export default function ProjectsPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/projects/')
+    fetch(`${import.meta.env.VITE_API_BASE_URL}/api/projects/`)
       .then((res) => res.json())
       .then((data) => {
         setProjects(data);

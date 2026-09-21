@@ -9,7 +9,7 @@ export default function ProjectDetailPage() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/api/projects/${id}/`)
+    fetch(`${import.meta.env.VITE_API_BASE_URL}/api/projects/${id}/`)
       .then((res) => {
         if (!res.ok) throw new Error('Project not found');
         return res.json();

@@ -9,7 +9,7 @@ export default function BlogDetailPage() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/api/blogs/${slug}/`)
+    fetch(`${import.meta.env.VITE_API_BASE_URL}/api/blogs/${slug}/`)
       .then((res) => {
         if (!res.ok) throw new Error('Article not found');
         return res.json();
