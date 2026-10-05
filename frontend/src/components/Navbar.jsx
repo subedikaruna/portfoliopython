@@ -14,8 +14,7 @@ export default function Navbar() {
   };
 
   const navLinkClass = ({ isActive }) =>
-    `text-sm font-medium transition-colors ${
-      isActive ? 'text-blue-400 font-bold' : 'opacity-80 hover:opacity-100'
+    `text-sm font-medium transition-colors ${isActive ? 'text-blue-400 font-bold' : 'opacity-80 hover:opacity-100'
     }`;
 
   return (
@@ -25,7 +24,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         <NavLink to="/" className="text-xl font-bold tracking-tight" style={{ color: 'var(--text-main)' }}>
-          PORTFOLIO
+          KARUNA
         </NavLink>
 
         <nav className="flex items-center gap-6">
